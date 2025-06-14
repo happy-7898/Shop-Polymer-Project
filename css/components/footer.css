@@ -1,0 +1,23 @@
+.index-footer{
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.65rem;
+    color: grey;
+    margin-top: -16px;
+}
+
+.index-footer p{
+    padding-top: 14px;
+}
+
+.btn-demo{
+    /* margin-top:2px; */
+    box-sizing: border-box;
+    width: 120px;
+    padding: 8px 6px;
+    color: white;
+    background-color: black;
+}

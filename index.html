@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/components/navbar.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" href="./assets/icons/favicon.png">
+</head>
+<body>
+
+    <aside class="sidebar" id="mobile-sidebar">
+        <a href="./pages/category/mensOuterWear.html"><p>Men's Outerwear</p></a>
+        <a href="./pages/category/ladiesOuterWear.html"><p>Ladies Outerwear</p></a>
+        <a href="./pages/category/menTshirts.html"><p>Men's T-Shirts</p></a>
+        <a href="./pages/category/ladiesTshirts.html"><p>Ladies T-Shirts</p></a>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="navbar">
+        <i class="fa-regular fa-bars" id="btn-toggle"></i>
+        <a class="shop-heading" id="shop">SHOP</a>
+        <a href="./pages/cart.html">
+            <i class="fa-regular fa-cart-shopping" id="shopping-cart"></i>
+            <div class="cart-count">2</div>
+        </a>
+    </nav>
+
+    <nav class="desktop-view">
+        <div class="navbar-horizontal">
+            <a href="./pages/category/mensOuterWear.html"><p>Men's Outerwear</p></a>
+            <a href="./pages/category/ladiesOuterWear.html"><p>Ladies Outerwear</p></a>
+            <a href="./pages/category/menTshirts.html"><p>Men's T-Shirts</p></a>
+            <a href="./pages/category/ladiesTshirts.html"><p>Ladies T-Shirts</p></a>
+        </div>
+    </nav>
+
+    <main class="home-main">
+        <div class="product-cards">
+
+            <div class="product-card">
+                <a href="./pages/category/mensOuterWear.html" class="card-link">
+                    <img src="./assets/images/mens_outerwear.jpg" alt="Men's Outerwear" />
+                    <p>Men's Outerwear</p>
+                    <button class="btn-shop">SHOP NOW</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="./pages/category/ladiesOuterWear.html" class="card-link">
+                    <img src="./assets/images/ladies_outerwear.jpg" alt="Ladies Outerwear" />
+                    <p>Ladies Outerwear</p>
+                    <button class="btn-shop">SHOP NOW</button>
+                </a>
+            </div>
+
+            <div class="tshirt-cards">
+                <div class="product-card">
+                    <a href="./pages/category/menTshirts.html" class="card-link">
+                        <img src="./assets/images/mens_tshirts.jpg" alt="Men's T-Shirts" />
+                        <p>Men's T-Shirts</p>
+                        <button class="btn-shop">SHOP NOW</button>
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <a href="./pages/category/ladiesTshirts.html" class="card-link">
+                        <img src="./assets/images/ladies_tshirts.jpg" alt="Ladies T-Shirts" />
+                        <p>Ladies T-Shirts</p>
+                        <button class="btn-shop">SHOP NOW</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="index-footer">
+        <p>Made by Polymer</p>
+        <button class="btn-demo">DEMO ONLY</button>
+    </footer>
+</body>
+</html>

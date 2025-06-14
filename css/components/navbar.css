@@ -1,0 +1,131 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.navbar{
+    display: inline-block;
+    height: 64px;
+    padding: 23px 0;
+    width: 100vw;
+    position: relative;
+
+}
+
+#btn-toggle{
+    position: absolute;
+    left: 27px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#shopping-cart{
+    position: absolute;
+    right: 27px;
+    font-size: 1rem;
+    font-weight: 600;
+    scale: 0.9;
+}
+
+.cart-count{
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+#shop{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.shop-heading{
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+
+/* for mobile*/
+.sidebar{
+    width: 12.8rem;
+    position: fixed;
+    height: 100vh;
+    z-index: 100;
+    background: white;
+    padding: 1.5rem;
+    left: -12.8rem;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.sidebar p{
+    color: #757575;
+    font-size: 0.65rem;
+    font-weight: 300;
+    height: 2rem;
+    padding: 0 0.8rem;
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.desktop-view{
+    display: none;
+    justify-content: center;
+}
+
+.navbar-horizontal{
+    margin-top: -6px;
+    height: 66px;
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar-horizontal a {
+    margin: 0 14px;
+    /* padding: 9px 6px; */
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 12.5px;
+    font-weight: 100;
+}
+
+@media (min-width:768px){
+    #btn-toggle{
+        display: none;
+    }
+
+    .desktop-view{
+        display: flex;
+    }
+
+    .sidebar{
+        display: none;
+    }
+}

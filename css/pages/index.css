@@ -1,0 +1,80 @@
+body{
+    overflow-x: hidden;
+}
+
+.home-main{
+    margin-top: -6px;
+}
+
+.product-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 354.36px;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.product-card>a>p{
+    scale: 1.05;
+    margin-top: 3px;
+    margin-left: 0.3px;
+}   
+
+.product-card img{
+    height: 240px;
+    object-fit: cover;
+}
+
+.btn-shop{
+    border: 2px solid black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 44px;
+    background-color: white;
+}
+
+.tshirt-cards{
+    display: flex;
+    max-width: 1440px;
+}
+
+.tshirt-cards .product-card a p{
+    font-size: 13.5px;
+}
+
+.tshirt-cards .btn-shop{
+    padding: 8px 24px;
+}
+
+@media (min-width:768px){
+    .home-main{
+        margin: 0;
+    }
+
+    /* .product-card{
+        height: 450.36px;
+    } */
+
+    .product-card a{
+        height: 450.36px;
+    }
+
+    .product-card a img{
+        height: 320px;
+        width: 1440px;
+        object-fit: cover;
+    }
+
+    .tshirt-cards .btn-shop{
+        width: 169px;
+    }
+}
