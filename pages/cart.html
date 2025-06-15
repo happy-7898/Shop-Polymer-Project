@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" href="../assets/icons/favicon.png">
+</head>
+<body>
+
+    <aside class="sidebar" id="mobile-sidebar">
+        <a href="./pages/category/mensOuterWear.html"><p>Men's Outerwear</p></a>
+        <a href="./pages/category/ladiesOuterWear.html"><p>Ladies Outerwear</p></a>
+        <a href="./pages/category/menTshirts.html"><p>Men's T-Shirts</p></a>
+        <a href="./pages/category/ladiesTshirts.html"><p>Ladies T-Shirts</p></a>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="navbar">
+        <i class="fa-regular fa-bars" id="btn-toggle"></i>
+        <a class="shop-heading" id="shop">SHOP</a>
+        <a href="./pages/cart.html">
+            <i class="fa-regular fa-cart-shopping" id="shopping-cart"></i>
+            <div class="cart-count">2</div>
+        </a>
+    </nav>
+
+    <main class="cart-main">
+        <div class="cart-heading">
+            <p> Your Cart</p>
+            <p id="item-count">(2 items)</p>
+        </div>
+
+        <div class="shop-cart-item">
+            <div class="cart-left">
+                <img src="../assets/images/mens-outerwear/1.jpg">
+            </div>
+
+            <div class="cart-right">
+                <div class="cart-item-name">
+                    <p>Men's Tech Shell Full Zip</p>
+                </div>
+
+                <div class="cart-item-info">
+                    <div class="dropdown-quantity">
+                        <label>Qty:</label>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <p class="size">Size: M</p>
+                    <p class="price">$50.20</p>
+                </div>
+
+                <div class="cart-item-remove">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-cart-item">
+            <div class="cart-left">
+                <img src="../assets/images/mens-outerwear/1.jpg">
+            </div>
+
+            <div class="cart-right">
+                <div class="cart-item-name">
+                    <p>Men's Tech Shell Full Zip</p>
+                </div>
+
+                <div class="cart-item-info">
+                    <div class="dropdown-quantity">
+                        <label>Qty:</label>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <p class="size">Size: M</p>
+                    <p class="price">$50.20</p>
+                </div>
+
+                <div class="cart-item-remove">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-total">
+            <p>Total: $68.55</p>
+            <button class="checkout-desktop">CHECKOUT</button>
+        </div>
+    </main>
+
+    <footer class="item-footer">
+        <button>CHECKOUT</button>
+    </footer>
+
+    <footer class="index-footer">
+        <p>Made by Polymer</p>
+        <button class="btn-demo">DEMO ONLY</button>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
