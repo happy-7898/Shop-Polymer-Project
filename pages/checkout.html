@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" href="../assets/icons/favicon.png">
+</head>
+<body>
+    <aside class="sidebar" id="mobile-sidebar">
+        <a href="./pages/category/mensOuterWear.html"><p>Men's Outerwear</p></a>
+        <a href="./pages/category/ladiesOuterWear.html"><p>Ladies Outerwear</p></a>
+        <a href="./pages/category/menTshirts.html"><p>Men's T-Shirts</p></a>
+        <a href="./pages/category/ladiesTshirts.html"><p>Ladies T-Shirts</p></a>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="navbar">
+        <i class="fa-regular fa-bars" id="btn-toggle"></i>
+        <a class="shop-heading" id="shop">SHOP</a>
+        <a href="./pages/cart.html">
+            <i class="fa-regular fa-cart-shopping" id="shopping-cart"></i>
+            <div class="cart-count">2</div>
+        </a>
+    </nav>
+
+
+    <main class="checkout-main">
+        <div class="checkout-heading">
+            <p>Checkout</p>
+            <p id="msg-info">Shop is a demo app - form data will not be sent</p>
+        </div>
+
+        <form>
+            <div class="left-cart">
+                <div>
+                    <h4>Account Information</h4>
+
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="shipping-address">
+                    <h4>Shipping Address</h4>
+
+                    <div class="form-group">
+                        <input type="text" id="address" required>
+                        <label for="address">Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="city" required>
+                        <label for="city">City</label>
+                    </div>
+
+                    <div class="address-details">
+                        <div class="form-group">
+                            <input type="text" id="state" class="state-name" required>
+                            <label for="state">State/Province</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="zip" class="pin-code" required>
+                            <label for="zip">Zip/Postal Code</label>
+                        </div>
+                    </div>
+
+                    <label class="country">Country</label>
+                    <select>
+                        <option value="United States">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+
+                <div id="billing-address">
+                    <h4>Billing Address</h4>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="billing-address-checkbox">
+                        <label for="billing-address-checkbox" class="checkbox-text">Use different billing address</label>
+                    </div>
+
+                    <div class="billing-address-container">
+                        <div class="form-group">
+                            <input type="text" id="bill-address" required>
+                            <label for="bill-address">Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="bill-city" required>
+                            <label for="bill-city">City</label>
+                        </div>
+
+                        <div class="address-details">
+                            <div class="form-group">
+                                <input type="text" id="bill-state" class="state-name" required>
+                                <label for="bill-state">State/Province</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="bill-zip" class="pin-code" required>
+                                <label for="bill-zip">Zip/Postal Code</label>
+                            </div>
+                        </div>
+
+                        <label>Country</label>
+                        <select>
+                            <option value="United States">United States</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right-cart">
+                <div id="payment-container">
+                <h4>Payment Method</h4>
+
+                <div class="form-group">
+                    <input type="text" id="card-name" required>
+                    <label for="card-name">Cardholder Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="card-number" required>
+                    <label for="card-number">Card Number</label>
+                </div>
+
+                <label id="expiry-heading">Expiry</label>
+                <div class="expiry-data">
+                    <select class="card-expiry">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+
+                    <select class="card-expiry">
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                    </select>
+
+                    <div class="form-group cvv-field" style="width: 31%;">
+                        <input type="text" id="cvv" class="cvv" required>
+                        <label for="cvv">CVV</label>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="order-summary">
+            <h4>Order Summary</h4>
+            <div class="item-summary">
+                <p class="item-name">Men's Tech Shell Full-Zip</p>
+                <p class="item-price">$50.20</p>
+            </div>
+            <div class="item-summary">
+                <p class="item-name">Men's Tech Shell Full-Zip</p>
+                <p class="item-price">$50.20</p>
+            </div>
+            </div>
+
+            <div class="total-price">
+            <p>Total</p>
+            <p>$100.40</p>
+            </div>
+
+            <div class="place-order">
+                <button>PLACE ORDER</button>
+            </div>
+    </main>
+
+    <footer class="item-footer">
+        <button>PLACE ORDER</button>
+    </footer>
+
+    <footer class="index-footer">
+        <p>Made by Polymer</p>
+        <button class="btn-demo">DEMO ONLY</button>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

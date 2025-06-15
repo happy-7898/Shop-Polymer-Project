@@ -1,0 +1,265 @@
+body {
+    overflow-x: hidden;
+}
+
+.checkout-main {
+    margin-top: -6px;
+    width: 100vw;
+    padding: 0px 24px;
+}
+
+.checkout-main form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-heading p {
+    font-size: 14.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.checkout-heading{
+    margin-bottom: 13px;
+}
+
+#msg-info {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #757575;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 30px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 0.5px solid rgba(117, 117, 117, 0.5);
+    background: transparent;
+    font-size: 16px;
+    padding: 8px 0;
+    margin-bottom: 13px;
+    margin-top: 4px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 4px;
+    font-weight: 200;
+    left: 0;
+    font-size: 16.5px;
+    color: #757575ab;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+input:focus+label,
+input:valid+label {
+    top: -12px;
+    font-size: 13px;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+    border-color: black;
+}
+
+.shipping-address,
+#billing-address,
+#payment-container,
+#order-summary {
+    margin-top: 19px;
+}
+
+.address-details {
+    display: flex;
+}
+
+.state-name,
+.pin-code {
+    width: 95%;
+}
+
+.state-name {
+    margin-right: 6px;
+}
+
+label {
+    font-size: 13px;
+}
+
+.country{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    font-size: 16px;
+    height: 30px;
+    background-color: white;
+    border-bottom: 0.5px solid rgba(117, 117, 117, 0.5);
+    margin-bottom: 14px;
+}
+
+#billing-address-checkbox {
+    width: 20px;
+    margin-top: 18px;
+}
+
+.checkbox-text {
+    margin-top: 4px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.billing-address-container {
+    display: none;
+}
+
+#expiry-heading {
+    height: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.expiry-data {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-expiry {
+    width: 31%;
+    margin-right: 4px;
+    padding-bottom: 5px;
+    margin-bottom: 4px;
+}
+
+.cvv-field{
+    margin: 0px;
+}
+
+.cvv{
+    height: 40px;
+    /* padding: 8px 0 0; */
+    margin-top: -2px;
+    padding-bottom: 0px;
+}
+
+
+
+#order-summary h4 {
+    margin-bottom: 10px;
+}
+
+.item-summary {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name,
+.item-price {
+    font-size: 13px;
+}
+
+.total-price {
+    height: 162px;
+    margin-top: 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-footer{
+    position: fixed;
+    bottom: 0px;
+    height: 3.2rem;
+    background-color: #172C50;
+}
+
+.item-footer button{
+    /* background-color: #172C50; */
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+    margin-top: 2px;
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.index-footer,.place-order{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .checkout-main form {
+        flex-direction: row;
+    }
+
+    .checkout-main {
+        margin-top: 60px;
+        padding-bottom: 48px;
+    }
+
+    .checkout-heading p {
+        font-size: 17px;
+    }
+
+    #payment-container {
+        margin-top: 0px;
+    }
+
+    .left-cart {
+        padding-top: 40px;
+        width: 45%;
+    }
+
+    .right-cart {
+        padding-top: 40px;
+        width: 45%;
+        margin-left: 80px;
+    }
+
+    .index-footer {
+        margin-top: 20px;
+    }
+
+    .total-price {
+        height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .place-order button {
+        padding: 6px 16px 4px;
+        height: 36px;
+        font-size: 15px;
+        width: 180px;
+        border: 2px solid black;
+        background-color: white;
+    }
+
+    #btn-toggle {
+        display: none;
+    }
+}

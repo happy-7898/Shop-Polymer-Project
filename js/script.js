@@ -11,3 +11,17 @@ overlay.addEventListener('click',()=>{
     sidebar.classList.remove('active')
     overlay.classList.remove('active')
 })
+
+
+//checkout
+
+const checkbox=document.getElementById("billing-address-checkbox");
+const container=document.querySelector(".billing-address-container");
+
+checkbox.addEventListener("change",()=>{
+    if(checkbox.checked){
+        container.style.display="block"
+    }else{
+        container.style.display="none"
+    }
+})
