@@ -1,0 +1,218 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.product-container{
+    margin-top: -6px;
+}
+
+.product-image-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image{
+    width: 80.2vw;
+}
+
+.item-footer{
+    position: fixed;
+    bottom: 0px;
+    height: 3.2rem;
+    background-color: #172C50;
+}
+
+.item-footer button{
+    /* background-color: #172C50; */
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+    margin-top: 2px;
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.product-details-section{
+    width: 100vw;
+    margin: 1.6rem 0;
+    padding: 0 1.2rem;
+}
+
+.product-title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.product-price{
+    color: #757575;
+    margin: 0.6rem 0 1.6rem;
+    font-size: 13px;
+}
+
+.dropdown{
+    width: 100%;
+    padding: 4px 0 3px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #dad9d9;
+    border-bottom: 1px solid #dad9d9;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.dropdown label{
+    font-size: 13px;
+    flex-shrink: 0;
+    width: 40px;
+    color: #757575;
+    line-height: 42px;
+}
+
+.dropdown+.dropdown{
+    border-top: none;
+    margin-top: 1px;
+}
+
+.dropdown select{
+    flex: 1;
+    font-size: 17px;
+    font-weight: 50;
+    padding: 8px 30px 8px 10px;
+    background-color: white;
+    background-image: url("/assets/icons/caret-down-solid1.svg");
+    background-repeat: no-repeat;
+    background-position: right 5% center;
+    background-size: 8px;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.description-container{
+    margin: 1.65rem 0 1.2rem;
+    font-size: 13px;
+    color: #757575;
+    padding-bottom: 2.6rem;
+}
+
+.description-container h2{
+    color:black;
+    font-size: 13px;
+}
+
+.description-container p{
+    margin: 0.8rem 0 0.95rem;
+}
+
+.features-container{
+    margin-top: 0.7rem;
+    margin-left: 2rem;
+}
+
+.features-container li{
+    list-style-type: disc;
+    margin-top: -0.1px;
+}
+
+.index-footer{
+    display: none;
+}
+
+
+@media (min-width:768px){
+    .product-container{
+        height: 100vh;
+        max-width: 1068px;
+        max-height: 768px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0px;
+    }
+
+    .items-mens-outerwear{
+        border-bottom: 2px solid black;
+        padding: 10px 5px 9px 5px;
+    }
+
+    .product-image-section,.product-details-section{
+        margin: 64px 32px;
+    }
+
+    .product-image-section{
+        box-sizing: content-box;
+    }
+
+    .product-details-section{
+        padding: 0px;
+        max-width: 399px;
+    }
+
+    .product-image{
+        width: 100%;
+        max-width: 642px;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        padding: 0;
+        justify-self: center;
+        align-self: flex-start;
+    }
+
+    .product-title{
+        font-size: 24px;
+        font-weight: 50;
+        margin-top: 2px;
+    }
+
+    .product-price{
+        font-size: 16px;
+        margin-top: 18px;
+    }
+
+    .product-size{
+        margin-top: 40px;
+    }
+
+    .item-footer{
+        display: none;
+    }
+
+    .index-footer{
+        display: flex;
+        position: relative;
+        top:72px;
+    }
+
+    .description-container{
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .btn-add-to-cart{
+        width: 186px;
+        height: 36px;
+        background-color: white;
+        margin-top: 32px;
+        font-size: 14px;
+        border: 2px solid black;
+    }
+    
+    .features-container li{
+        margin-bottom: -0.5px;
+    }
+
+    #btn-toggle{
+        display: inherit;
+    }
+}
+
