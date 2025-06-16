@@ -1,4 +1,5 @@
 body{
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -24,9 +25,13 @@ body{
 }
 
 .product-card>a>p{
-    scale: 1.05;
-    margin-top: 3px;
+    /* scale: 1.05; */
+    font-family: sans-serif;
+    font-size: 16.5px;
+    font-weight: 250;
+    margin-top: 2px;
     margin-left: 0.3px;
+    letter-spacing: 0.2px;
 }   
 
 .product-card img{
@@ -34,11 +39,36 @@ body{
     object-fit: cover;
 }
 
+
+
+.card2,.card3{
+    margin-top: 8px;
+}
+
+.card2>a>p{
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.card2>a>button{
+    /* height: 50px; */
+    margin-top: 4px;
+}
+
+.card3>div>a{
+    height: 350.44px;
+}
+
+.card3>div>a>p{
+    margin-top: -2px;
+}
+
 .btn-shop{
+    font-family: sans-serif;
     border: 2px solid black;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 8px 44px;
+    font-size: 13.9px;
+    font-weight: 400;
+    padding: 8px 45px;
     background-color: white;
 }
 
@@ -48,11 +78,11 @@ body{
 }
 
 .tshirt-cards .product-card a p{
-    font-size: 13.5px;
+    font-size: 13.7px;
 }
 
 .tshirt-cards .btn-shop{
-    padding: 8px 24px;
+    padding: 8px 25px;
 }
 
 @media (min-width:768px){
@@ -60,13 +90,20 @@ body{
         margin: 0;
     }
 
-    /* .product-card{
-        height: 450.36px;
-    } */
+
 
     .product-card a{
         height: 450.36px;
+        margin-bottom: 32px;
     }
+
+    .card3>div>a{
+        height: 444px;
+    }
+
+
+
+    
 
     .product-card a img{
         height: 320px;

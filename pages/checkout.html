@@ -24,10 +24,12 @@
     <div class="overlay" id="overlay"></div>
 
     <nav class="navbar">
-        <i class="fa-regular fa-bars" id="btn-toggle"></i>
-        <a class="shop-heading" id="shop" href="/index.html">SHOP</a>
-        <a href="../pages/cart.html">
-            <i class="fa-regular fa-cart-shopping" id="shopping-cart"></i>
+        <!-- <i class="fa-regular fa-bars" id="btn-toggle"></i> -->
+        <img src="/assets/icons/menu.png" id="btn-toggle">
+        <a class="shop-heading" id="shop">SHOP</a>
+        <a href="/pages/cart.html">
+            <!-- <i class="fa-regular fa-cart-shopping" id="shopping-cart"></i> -->
+            <img src="/assets/icons/cart.png" id="shopping-cart">
             <div class="cart-count">2</div>
         </a>
     </nav>
@@ -175,7 +177,7 @@
 
                     <div class="form-group cvv-field" style="width: 31%;">
                         <input type="text" id="cvv" class="cvv" required>
-                        <label for="cvv">CVV</label>
+                        <label for="cvv" id="cvv-label">CVV</label>
                     </div>
                 </div>
                 </div>

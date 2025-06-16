@@ -14,26 +14,30 @@ body{
 
 #btn-toggle{
     position: absolute;
-    left: 27px;
+    top: 20px;
+    left: 24px;
     font-size: 1rem;
     font-weight: 600;
 }
 
 #shopping-cart{
     position: absolute;
-    right: 27px;
-    font-size: 1rem;
+    top: 20px;
+    right: 24px;
+    /* font-size: 1rem; */
     font-weight: 600;
-    scale: 0.9;
+    /* scale: 0.9; */
 }
 
 .cart-count{
     position: absolute;
     top: 10px;
-    right: 17px;
+    right: 16px;
+    font-family: sans-serif;
     background-color: black;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 400;
     border-radius: 50%;
     height: 20px;
     width: 20px;
@@ -44,14 +48,16 @@ body{
 
 #shop{
     position: absolute;
+    top: 21px;
     right: 50%;
     transform: translateX(50%);
 }
 
 .shop-heading{
+    font-family: 'Roboto', 'Noto', sans-serif;
     font-weight: 550;
     font-size: 16px;
-    letter-spacing: 5px;
+    letter-spacing: 4.9px;
 }
 
 
@@ -104,21 +110,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 5.5px;
 }
 
 .navbar-horizontal a {
     margin: 0 14px;
     /* padding: 9px 6px; */
     box-sizing: border-box;
-    font-family: 'Roboto', 'Noto', sans-serif;
-    font-size: 12.5px;
+    /* font-family: 'Roboto', 'Noto', sans-serif; */
+    font-size: 12px;
     font-weight: 100;
+    letter-spacing: 0.5px;
 }
 
 @media (min-width:768px){
+
     #btn-toggle{
         display: none;
+    }
+
+
+    #shop{
+        top: 22px;
+        scale: 1.05;
     }
 
     .desktop-view{
