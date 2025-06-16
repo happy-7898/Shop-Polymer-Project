@@ -1,4 +1,5 @@
 body {
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -215,11 +216,14 @@ select {
 @media (min-width: 768px) {
     .checkout-main form {
         flex-direction: row;
+        gap: 40px;
     }
 
     .checkout-main {
+        height: 100vh;
         margin-top: 60px;
         padding-bottom: 48px;
+        /* margin-bottom: 30px; */
     }
 
     .checkout-heading p {
@@ -238,16 +242,20 @@ select {
     .right-cart {
         padding-top: 40px;
         width: 45%;
-        margin-left: 80px;
+        margin-left: 40px;
     }
 
-    .index-footer {
+    /* .index-footer {
         margin-top: 20px;
-    }
+    } */
 
     .total-price {
         height: 25px;
         margin-bottom: 25px;
+    }
+
+    .place-order{
+        display: block;
     }
 
     .place-order button {
@@ -261,5 +269,18 @@ select {
 
     #btn-toggle {
         display: none;
+    }
+
+    .expiry-data{
+        justify-content: flex-start;
+        gap: 3%;
+    }
+
+    .item-footer{
+        display: none;
+    }
+
+    .index-footer{
+        display: flex;
     }
 }
