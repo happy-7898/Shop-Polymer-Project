@@ -73,6 +73,14 @@ body{
     margin-top: 20px;
 }
 
+.image-growth-helper {
+    display: block;
+    width: 66.5%;
+    max-width: 300px;
+    height: 0px;
+    background-color: transparent;
+}
+
 @media (min-width:768px){
     .category-banner{
         display: flex;
@@ -128,6 +136,21 @@ body{
 
     .item-name{
         margin: 2% 30px 0px 30px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .items-cards{
+        gap: 0.5%;
+        justify-content: center;
+    }
+
+    .items-card{
+        width: 32.8%;
+    }
+
+    .image-growth-helper {
+        height: clamp(0px, calc((100vw - 1230px) / 2.5), 60px);
     }
 }
 
