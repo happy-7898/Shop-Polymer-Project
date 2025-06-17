@@ -3,19 +3,30 @@ body{
     overflow-x: hidden;
 }
 
+
+
 .items-container{
     width: 100vw;
     padding: 0 1%;
     margin-top: -6px;
+    margin-bottom: 30px;
 }
 
 .items-heading{
     height: 44.49px;
     font-size: 14px;
+    font-family: 'Roboto';
+    letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    font-weight: 350;
+}
+
+.items-total{
+    font-family: sans-serif;
+    letter-spacing: 0px;
 }
 
 .items-heading .items-total{
@@ -44,7 +55,7 @@ body{
     text-decoration: none;
     color: inherit;
     background-color: white;
-    padding: 12px 12px 10px 12px;
+    padding: 13px 12px 4px 12px;
     /* padding-bottom: 10px; */
 }
 
@@ -57,6 +68,12 @@ body{
 
 .item-name{
     padding: 13px 11px 0 11px;
+    margin-top: 3px;
+}
+
+.second-card{
+    padding-top: 7px;
+    padding-bottom: 6px;
 }
 
 .item-price{
@@ -122,7 +139,7 @@ body{
         height: 32%;
         min-height: 246px;
         max-height: 460px;
-        margin-bottom: 14px;
+        margin-bottom: 10px;
         padding-top: 7px;
         padding-bottom: 0px;
     }
@@ -137,12 +154,20 @@ body{
     .item-name{
         margin: 2% 30px 0px 30px;
     }
+
+    .navbar-horizontal{
+        gap: 4px;
+    }
+
+    .second-card{
+        padding-top: 0px;
+    }
 }
 
 @media (min-width: 1230px) {
     .items-cards{
         gap: 0.5%;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .items-card{
@@ -151,6 +176,25 @@ body{
 
     .image-growth-helper {
         height: clamp(0px, calc((100vw - 1230px) / 2.5), 60px);
+    }
+}
+
+@media (min-width:1440px){
+    .items-card img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .items-cards{
+        gap: 11px;
+    }
+
+    .index-footer{
+        margin-top: 0px;
+    }
+
+    .items-container{
+        margin-bottom: 10px;
     }
 }
 
