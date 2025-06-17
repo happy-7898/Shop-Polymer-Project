@@ -21,7 +21,7 @@ body{
 }
 
 #item-count{
-    font-size: 12.5px;
+    font-size: 12px;
     box-sizing: border-box;
     padding: 5px ;
     color: #757575;
@@ -29,7 +29,7 @@ body{
 
 .shop-cart-item{
     width: 80vw;
-    padding: 3px 0;
+    padding: 4px 0 3px;
     display: flex;
     gap: 10px;
     margin-top: 16px;
@@ -127,7 +127,7 @@ body{
 .cart-total{
     font-size: 13px;
     font-weight: bold;
-    padding: 39px 10px;
+    padding: 37px 10px;
     word-spacing: 24px;
     display: flex;
     justify-content: end;
@@ -148,7 +148,7 @@ body{
     box-sizing: border-box;
     width: 100vw;
     margin-top: 2px;
-    padding: 1rem;
+    padding: 18px;
     font-size: 15px;
     font-weight: 100;
 }
@@ -160,6 +160,11 @@ body{
 
 .checkout-desktop{
     display: none;
+}
+
+#shop{
+    font-size: 16.5px;
+    top: 22px;
 }
 
 @media (min-width:360px) and (max-width:767px){
@@ -304,5 +309,23 @@ body{
 
     .item-footer{
         display: none;
+    }
+}
+
+@media (min-width:1440px){
+    .cart-item-info{
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .checkout-desktop{
+        font-size: 14px;
+        margin-right: 0px;
+        margin-left: 67px;
+    }
+
+    .cart-total{
+        padding: 38px 10px 35px;
     }
 }
