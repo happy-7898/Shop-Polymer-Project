@@ -124,6 +124,9 @@ body{
     display: none;
 }
 
+#shop{
+    top: 22px;
+}
 
 @media (min-width:768px){
     .product-container{
@@ -214,5 +217,44 @@ body{
     #btn-toggle{
         display: inherit;
     }
+}
+
+
+@media (min-width:1440px) {
+    .product-image{
+        height: 600px;
+        width: 600px;
+        object-fit: cover;
+    }
+
+    .product-image-section{
+        padding: 0;
+        margin: 0;
+        padding-top: 65px;
+    }
+
+    .product-details-section{
+        width: auto;
+        margin-left: 66px;
+        margin-right: 4px;
+    }
+
+    .description-container{
+        margin-top: 33px;
+    }
+
+    .description-container p{
+        margin-top: 17px;
+        margin-bottom: 19px;
+    }
+
+    .features-container{
+        margin-left: 40px;
+    }
+
+    .features-container li{
+        margin-bottom: 1px;
+    }
+    
 }
 
