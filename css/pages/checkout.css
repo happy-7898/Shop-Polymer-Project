@@ -195,7 +195,7 @@ select {
 .item-footer{
     position: fixed;
     bottom: 0px;
-    height: 4rem;
+    height: 64px;
     background-color: #172C50;
 }
 
@@ -206,13 +206,17 @@ select {
     box-sizing: border-box;
     width: 100vw;
     margin-top: 2px;
-    padding: 1.2rem;
+    padding: 20px 24px;
     font-size: 15px;
     font-weight: 100;
 }
 
 .index-footer,.place-order{
     display: none;
+}
+
+#shop{
+    top: 22px;
 }
 
 @media (min-width: 768px) {
